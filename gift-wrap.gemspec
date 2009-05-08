@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.date = %q{2009-05-08}
   s.description = %q{This is a set of macros for streamlining some common usage patterns with git}
   s.email = ["interactive@factorylabs.com"]
-  s.executables = ["git-subtree-remote", "git-subtree-merge", "git-subtree-update", "git-subtree-dif"]
+  s.executables = ["git-subtree-remote", "git-subtree-merge", "git-subtree-update", "git-subtree-diff", "git-pending-local", "git-pending-remote"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "bin/git-subtree-remote", "bin/git-subtree-merge", "bin/git-subtree-update", "bin/git-subtree-dif"]
+  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "bin/git-subtree-remote", "bin/git-subtree-merge", "bin/git-subtree-update", "bin/git-subtree-diff", "bin/git-pending-local", "bin/git-pending-remote", "lib/gift_wrap.rb"]
   s.has_rdoc = true
   s.homepage = %q{This is a set of macros for streamlining some common usage patterns with git}
   s.post_install_message = %q{}
@@ -26,16 +26,13 @@ Gem::Specification.new do |s|
     s.specification_version = 2
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rack>, [">= 0.9.1"])
       s.add_development_dependency(%q<newgem>, [">= 1.3.0"])
       s.add_development_dependency(%q<hoe>, [">= 1.8.0"])
     else
-      s.add_dependency(%q<rack>, [">= 0.9.1"])
       s.add_dependency(%q<newgem>, [">= 1.3.0"])
       s.add_dependency(%q<hoe>, [">= 1.8.0"])
     end
   else
-    s.add_dependency(%q<rack>, [">= 0.9.1"])
     s.add_dependency(%q<newgem>, [">= 1.3.0"])
     s.add_dependency(%q<hoe>, [">= 1.8.0"])
   end

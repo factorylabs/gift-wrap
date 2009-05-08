@@ -8,9 +8,7 @@ $hoe = Hoe.new('gift-wrap', GiftWrap::VERSION) do |p|
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.post_install_message = ""
   p.rubyforge_name       = p.name
-  p.extra_deps           = [
-    ['rack', '>= 0.9.1'],
-  ]
+  p.extra_deps           = []
   p.extra_dev_deps        = [
     ['newgem', ">= #{::Newgem::VERSION}"]
   ]

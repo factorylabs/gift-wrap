@@ -6,3 +6,6 @@ bin/git-subtree-remote
 bin/git-subtree-merge
 bin/git-subtree-update
 bin/git-subtree-diff
+bin/git-pending-local
+bin/git-pending-remote
+lib/gift_wrap.rb
