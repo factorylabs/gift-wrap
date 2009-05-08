@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "readline"
+branch = begin
+  print "Branch? "
+  Readline.readline.chomp
+end
+puts `git-diff-tree -p #{branch}`

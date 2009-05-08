@@ -1,0 +1,33 @@
+
+== DESCRIPTION:
+This is a set of macros for streamlining some common usage patterns with git
+
+== FEATURES:
+
+Git Subtree
+Taken from http://dysinger.net/2008/04/29/replacing-braid-or-piston-for-git-with-40-lines-of-rake/
+Example Usage:
+
+  git subtree-remote
+    Git Repo Url? git://github.com/mislav/will_paginate.git
+    Remote Name? vendor/plugins/will_paginate
+  git subtree-merge
+    Branch? will_paginate/tags/2.2.2
+    Destination? vendor/plugins/will_paginate
+  git commit
+
+From time to time update your remotes:
+  git remote update
+  -or-
+  git fetch vendor/plugins/will_paginate
+
+View diffs:
+
+  git subtree-diff
+    Branch? vendor/plugins/will_paginate/tags/2.2.3
+
+Merge in updates:
+
+  git subtree-update
+    Branch? vendor/plugins/will_paginate/tags/2.2.3
+  git commit

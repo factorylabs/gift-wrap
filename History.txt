@@ -1,0 +1,3 @@
+== 0.0.1.0 2009-05-08
+* 1 major enhancement
+  * brought in subtree macros from http://dysinger.net/2008/04/29/replacing-braid-or-piston-for-git-with-40-lines-of-rake/

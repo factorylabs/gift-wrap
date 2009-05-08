@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require "readline"
+url = begin
+  print "Git Repo Url? "
+  Readline.readline.chomp
+end
+name = begin
+  print "Remote Name? "
+  Readline.readline.chomp
+end
+`git remote add #{name} #{url}`
+`git config remote.#{name}.fetch refs/heads/*:refs/remotes/#{name}/*`
+`git config --add remote.#{name}.fetch refs/tags/*:refs/remotes/#{name}/tags/*`
+`git config remote.#{name}.tagopt --no-tags`
+`git fetch #{name}`

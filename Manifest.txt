@@ -1,0 +1,8 @@
+History.txt
+Manifest.txt
+README.rdoc
+Rakefile
+bin/git-subtree-remote
+bin/git-subtree-merge
+bin/git-subtree-update
+bin/git-subtree-diff
