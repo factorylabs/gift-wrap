@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Factory Design Labs"]
-  s.date = %q{2009-05-08}
+  s.date = %q{2009-05-11}
   s.description = %q{This is a set of macros for streamlining some common usage patterns with git}
   s.email = ["interactive@factorylabs.com"]
   s.executables = ["git-subtree-remote", "git-subtree-merge", "git-subtree-update", "git-subtree-diff", "git-pending-local", "git-pending-remote"]
