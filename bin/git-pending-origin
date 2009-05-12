@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+`git fetch origin`
+puts `git log ..origin/master`
