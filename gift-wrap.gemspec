@@ -2,16 +2,16 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gift-wrap}
-  s.version = "0.0.1.0"
+  s.version = "0.0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Factory Design Labs"]
-  s.date = %q{2009-05-11}
+  s.date = %q{2009-05-12}
   s.description = %q{This is a set of macros for streamlining some common usage patterns with git}
   s.email = ["interactive@factorylabs.com"]
-  s.executables = ["git-subtree-remote", "git-subtree-merge", "git-subtree-update", "git-subtree-diff", "git-pending-local", "git-pending-remote"]
+  s.executables = ["git-subtree-remote", "git-subtree-merge", "git-subtree-update", "git-subtree-diff", "git-pending-local", "git-pending-origin"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "bin/git-subtree-remote", "bin/git-subtree-merge", "bin/git-subtree-update", "bin/git-subtree-diff", "bin/git-pending-local", "bin/git-pending-remote", "lib/gift_wrap.rb"]
+  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "bin/git-subtree-remote", "bin/git-subtree-merge", "bin/git-subtree-update", "bin/git-subtree-diff", "bin/git-pending-local", "bin/git-pending-origin", "lib/gift_wrap.rb"]
   s.has_rdoc = true
   s.homepage = %q{This is a set of macros for streamlining some common usage patterns with git}
   s.post_install_message = %q{}
